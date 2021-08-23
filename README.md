@@ -33,7 +33,7 @@ The network takes 8 samples as input, with 2 features per sample (x1 & x2) and b
 
 A very simple model architecture was chosen to reduce the complexity in calculus required in the backpropagation stage. The input layer has 2 neurons owing to the 2 input features and there is a single hidden layer of a single neuron before the output of another single neuron. 
 
-<img src="https://raw.githubusercontent.com/mhaythornthwaite/Vanilla_Neural_Network_Excel/master/figures/mlp_architecture.PNG" alt="Figure 2">
+<img src="https://raw.githubusercontent.com/mhaythornthwaite/Vanilla_Neural_Network_Excel/master/figures/mlp_architecture_v2.PNG" alt="Figure 2">
 
 <em>Figure 2. Neural network architecture used in this sheet, showing the 5 trainable parameters: 3 weights and 2 biases.</em>
 
