@@ -53,7 +53,7 @@ The chain rule was used to calculate the change in loss with respect to each tra
 
 #### License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details. 
 
 
 <!--
