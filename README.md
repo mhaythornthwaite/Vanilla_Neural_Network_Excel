@@ -51,6 +51,11 @@ Before any training can occur, we first need to define our objective function or
 
 The chain rule was used to calculate the change in loss with respect to each trainable parameter (3 weights and 2 biases). These differentials become increasingly complicated (contain more terms) as you move further away from the output layer. A simple gradient descent optimiser is employed in this situation, whereby the differentials of all 8 samples are summed to produce a single gradient per trainable parameter. Stochastic gradient descent, whereby a random selection of samples are used in backpropagation is not appropriate as we only have 8 training samples. Adaptive gradient descent has not been utilised to give the user control over learning rates whilst momentum has not been used as gradients in this example aren’t expected to be noisy.
 
+#### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
+
+
 <!--
 ![image info](./figures/mlp_architecture.PNG)
 -->
