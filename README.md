@@ -40,14 +40,17 @@ A very simple model architecture was chosen to reduce the complexity in calculus
 
 #### Activation Functions
 
-A sigmoid activation function has been used for both our hidden layer and output layer. Using a sigmoid activation is necessary for the output layer as we are working on binary classification. It is often typical to use a RELU function for hidden layer activations however, as we only have a single neuron in the hidden layer it would be counterproductive for this to become inactive.
+A sigmoid activation function has been used for both our hidden layer and output layer. Using a sigmoid activation is necessary for the output layer as we are working on binary classification. It is often typical to use a RELU function for hidden layer activations however, as we only have a single neuron in the hidden layer, it would be counterproductive for this to become inactive.
 
 #### Loss Function
 
 Before any training can occur, we first need to define our objective function or loss function. It’s essential that our loss function strongly (or ideally fully) correlates with how we define success. In this example we are using binary cross-entropy, a typical choice for binary classification problems.
 
 
-#### Optimiser
+#### Backpropagation & Optimiser
+
+The chain rule was used to calculate the change in loss with respect to each trainable parameter (3 weights and 2 biases). These differentials become increasingly complicated (contain more terms) as you move further away from the output layer. A simple gradient descent optimiser is employed in this situation, whereby the differentials of all 8 samples are summed to produce a single gradient per trainable parameter. Stochastic gradient descent, whereby a random selection of samples are used in backpropagation is not appropriate as we only have 8 training samples. Adaptive gradient descent has not been utilised to give the user control over learning rates whilst momentum has not been used as gradients in this example aren’t expected to be noisy.
+
 <!--
 ![image info](./figures/mlp_architecture.PNG)
 -->
